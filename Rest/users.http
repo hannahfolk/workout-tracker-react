@@ -1,0 +1,21 @@
+###
+POSt http://localhost:3001/api/users/signup
+Content-Type: application/json
+
+{
+  "username": "test",
+  "email": "test@gmail.com",
+  "password": "123456"
+}
+
+###
+POST http://localhost:3001/api/users/authenticate
+Content-Type: application/json
+
+{ 
+	"username": "hfolk25", 
+	"password": "123456"
+}
+
+###
+GET http://localhost:3001/api/users
