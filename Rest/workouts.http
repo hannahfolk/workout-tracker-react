@@ -1,0 +1,29 @@
+###
+GET http://localhost:3001/api/workouts
+
+###
+POST http://localhost:3001/api/workouts
+
+###
+POST http://localhost:3001/api/workouts/resistance/1
+Content-Type: application/json
+
+{
+  "type": "resistance",
+  "name": "Chest Flys",
+  "duration": 5,
+  "weight": 20,
+  "reps": 3,
+  "sets": 2
+}
+
+###
+POST http://localhost:3001/api/workouts/cardio/1
+Content-Type: application/json
+
+{
+  "type": "cardio",
+  "name": "Biking",
+  "duration": 60,
+  "distance": 6
+}
